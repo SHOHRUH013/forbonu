@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-Mart Tabriknomasi</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Marck+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-full overflow-auto">
+  <div id="app" class="min-h-full w-full relative overflow-hidden" style="background: linear-gradient(180deg, #fdf2f8 0%, #fce7f3 30%, #fbcfe8 60%, #f9a8d4 100%);">
+
+    <div id="decorations" class="absolute inset-0 pointer-events-none overflow-hidden">
+      <div class="balloon float-1" style="top: 10%; left: 5%; background: linear-gradient(135deg, #f9a8d4 0%, #ec4899 100%); color: #ec4899;"></div>
+      <div class="balloon float-2" style="top: 15%; right: 8%; background: linear-gradient(135deg, #c4b5fd 0%, #8b5cf6 100%); color: #8b5cf6;"></div>
+      <div class="balloon float-3" style="top: 25%; left: 12%; background: linear-gradient(135deg, #fca5a5 0%, #ef4444 100%); color: #ef4444;"></div>
+      <div class="balloon float-1" style="top: 8%; right: 15%; background: linear-gradient(135deg, #fcd34d 0%, #f59e0b 100%); color: #f59e0b;"></div>
+      <div class="balloon float-2" style="top: 20%; left: 3%; background: linear-gradient(135deg, #a5f3fc 0%, #06b6d4 100%); color: #06b6d4;"></div>
+      <div class="flower float-2" style="top: 5%; left: 20%;">🌸</div>
+      <div class="flower float-1" style="top: 12%; right: 25%;">🌺</div>
+      <div class="flower float-3" style="top: 30%; left: 8%;">🌷</div>
+      <div class="flower float-2" style="top: 8%; right: 5%;">💐</div>
+      <div class="flower float-1" style="top: 22%; right: 12%;">🌹</div>
+      <div class="flower float-3" style="top: 35%; right: 3%;">🌻</div>
+      <div class="flower float-2" style="top: 40%; left: 5%;">🌼</div>
+      <div class="flower float-1" style="top: 18%; left: 25%;">💮</div>
+      <div class="flower sparkle" style="top: 3%; left: 50%;">✨</div>
+      <div class="flower sparkle" style="top: 15%; left: 40%;">✨</div>
+      <div class="flower sparkle" style="top: 10%; right: 35%;">✨</div>
+      <div class="flower float-1" style="top: 45%; left: 2%; font-size: 20px;">💕</div>
+      <div class="flower float-2" style="top: 50%; right: 5%; font-size: 24px;">💖</div>
+      <div class="flower float-3" style="top: 55%; left: 10%; font-size: 18px;">💗</div>
+    </div>
+
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-full py-8 px-4">
+      <div class="text-center mb-8 sway">
+        <h1 class="title-8mart mb-2" id="title-text">8-Mart</h1>
+        <p class="subtitle text-lg font-semibold" id="subtitle-text">Xalqaro Xotin-Qizlar Kuni</p>
+      </div>
+
+      <div class="envelope-container mb-8">
+        <div class="envelope pulse" id="envelope">
+          <div class="envelope-body"></div>
+
+          <div class="letter" id="letter">
+            <div class="letter-content">
+              <div class="letter-name" id="recipient-name"></div>
+              <div class="letter-text" id="greeting-text"></div>
+              <div class="letter-bayram" id="bayram-text"></div>
+              <div class="letter-signature" id="signature"></div>
+            </div>
+          </div>
+
+          <div class="envelope-flap" id="flap">
+            <div class="envelope-flap-inner"></div>
+            <div class="envelope-flap-back"></div>
+          </div>
+
+          <div class="seal" id="seal">
+            <span class="seal-text">
+              <span class="seal-num">8</span>
+              <span class="seal-word">Mart</span>
+            </span>
+          </div>
+
+          <div class="burst-effect" id="burst"></div>
+        </div>
+      </div>
+
+      <p class="text-pink-700 text-sm font-medium animate-pulse" id="instruction" style="color: #9d174d;">✨ Muhrni bosing ✨</p>
+    </div>
+
+    <div id="confetti-container" class="fixed inset-0 pointer-events-none z-50 overflow-hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
