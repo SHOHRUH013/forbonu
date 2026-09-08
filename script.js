@@ -1,6 +1,6 @@
 const defaultConfig = {
-  recipient_name: 'Shahinam',
-  greeting_text: 'Sizni 8-Mart — Xalqaro Xotin-Qizlar kuni bilan chin dildan tabriklayman!\n\nHayotingiz baxt-saodatga, yuragingiz mehr-muhabbatga to\'la bo\'lsin!\n\nOilangizga tinchlik, ishlaringizga omad tilayman! 🌸'
+  recipient_name: 'mening Nastarinbonuyim',
+  greeting_text: 'Siz bilan togri kop bolmagandir tanishmaganimizga\n\n lekin man sizni kozlaringizni korib bilmiman bu yurak sizni sevishni hohladi\n\n manga imkoniyat berganing uchun rahmat sizga! 🌸'
 };
 
 let isOpened = false;
@@ -106,7 +106,7 @@ async function openEnvelope() {
         await typeText(greetingEl, greeting, 38);
         await new Promise(r => setTimeout(r, 400));
 
-        await typeText(bayramEl, 'Bayramingiz muborak!', 60);
+        await typeText(bayramEl, 'Siznni judayam yaxshi korib qoldim!', 60);
         await new Promise(r => setTimeout(r, 350));
 
         await typeText(signatureEl, 'Hurmat bilan,\nShohruh', 90);
@@ -114,7 +114,7 @@ async function openEnvelope() {
         isTyping = false;
 
         setTimeout(() => {
-          instruction.textContent = '🎉 Bayramingiz muborak! 🎉';
+          instruction.textContent = '💖 Sizni sevaman ! 💖';
           instruction.style.opacity = '1';
         }, 300);
       }, 500);
